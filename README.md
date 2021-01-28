@@ -4,7 +4,7 @@
 
 Output for the week:
 
-![mtcars.png]()
+![mtcars.png](https://github.com/swd12012/snakemake_exercise/blob/main/mtcars.png)
 
 ##### Exercise Questions
 
