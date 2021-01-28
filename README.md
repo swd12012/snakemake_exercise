@@ -1,22 +1,22 @@
-### Advanced Informatics 2021 
+## Advanced Informatics 2021 
 
-#### Week 4 Lab Exercise
+### Week 4 Lab Exercise
 
 Output for the week:
 
 ![mtcars.png](https://github.com/swd12012/snakemake_exercise/blob/main/mtcars.png)
 
-##### Exercise Questions
+#### Exercise Questions
 
 1. To delete all the output from a `snakemake` workflow, you can run `snakemake -j1 --delete-all-output`, since I have an `all` rule.
 
 2. To delete the output from a specific `rule`, you can run `snakemake -j1 {rule} --delete-all-output`.
 
-3. The citation for `snakemake` is [Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012.](https://academic.oup.com/bioinformatics/article/28/19/2520/290322).
+3. The citation for `snakemake` is [Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012.](https://academic.oup.com/bioinformatics/article/28/19/2520/290322)
 
-##### Demonstrating that `touch`ing files reruns the relevant rules
+#### Demonstrating that `touch`ing files reruns the relevant rules
 
-If I `touch mtcars.R`, this is the output that I get:
+* If I `touch mtcars.R`, this is the output that I get:
 
 ```bash
 snakemake -j1 -np
@@ -59,7 +59,7 @@ Job counts:
 This was a dry-run (flag -n). The order of jobs does not reflect the order of execution.
 ```
 
-If I `touch mtcars.sqlite3`:
+* If I `touch mtcars.sqlite3`:
 
 ```bash
 Building DAG of jobs...
@@ -90,7 +90,7 @@ Job counts:
 This was a dry-run (flag -n). The order of jobs does not reflect the order of execution.
 ```
 
-If I `touch mtcars.py`:
+* If I `touch mtcars.py`:
 
 ```bash
 Building DAG of jobs...
